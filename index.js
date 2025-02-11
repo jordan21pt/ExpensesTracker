@@ -18,7 +18,8 @@ mongoose
     .catch((err) => console.error("Error connecting to MongoDB!", err));
 
 // Route
-app.use("/api/expenses", require("./routes/expenseRoutes"));
+app.use("/api/movements", require("./routes/movementsRoutes"));
+app.use("/api/users", require("./routes/usersRoutes"));
 
 
 const PORT = process.env.PORT || 5050;
